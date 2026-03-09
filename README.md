@@ -1,20 +1,25 @@
-Healthcare Data Integration
-This project demonstrates how to take "Legacy" hospital data (old database formats) and map it into the modern HL7 FHIR R4 standard.
+# Healthcare Data Integration
 
-Why I built this:
-Modern Electronic Health Records (EHRs), need data to be in a very specific format to talk to other systems. This script acts as the "bridge" to ensure patient data is interoperable and compliant.
+This project demonstrates how to take **"Legacy" hospital data** (old database formats) and map it into the modern **HL7 FHIR R4 standard**.
 
-Technical Features:
-Data Mapping: Converted unstructured JSON objects into structured FHIR Patient Resources.
+### Why I built this:
+Modern Electronic Health Records (EHRs), like need data to be in a very specific format to talk to other systems. This script acts as the "bridge" to ensure patient data is interoperable and compliant.
 
-Library Integration: Used the fhir.resources Python library to validate data types.
 
-Error Handling: Resolved a common serialization issue where standard Python JSON libraries fail to process birthDate objects by utilizing the library's native .json() method.
 
-How to Run:
-Install requirements: pip install fhir.resources
+### Technical Features:
+* **Data Mapping:** Converted unstructured JSON objects into structured FHIR Patient Resources.
+* **Library Integration:** Used the `fhir.resources` Python library to validate data types.
+* **Error Handling:** Resolved a common serialization issue where standard Python JSON libraries fail to process `birthDate` objects by utilizing the library's native `.json()` method.
 
-Run the script: python fhir_mapper.py
+### How to Run:
+1.  **Install requirements:** `pip install fhir.resources`
+2.  **Run the script:** `python fhir_mapper.py`
 
-Proof of Work:
+---
+
+### Proof of Work:
 Below is the terminal output showing the successful transformation of a legacy record into a standardized FHIR resource:
+
+```text
+[fhir_output.png.png]
