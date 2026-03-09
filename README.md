@@ -2,7 +2,7 @@ Healthcare Data Integration
 This project demonstrates how to take "Legacy" hospital data (old database formats) and map it into the modern HL7 FHIR R4 standard.
 
 Why I built this:
-Modern Electronic Health Records (EHRs), like Epic, need data to be in a very specific format to talk to other systems. This script acts as the "bridge" to ensure patient data is interoperable and compliant.
+Modern Electronic Health Records (EHRs), need data to be in a very specific format to talk to other systems. This script acts as the "bridge" to ensure patient data is interoperable and compliant.
 
 Technical Features:
 Data Mapping: Converted unstructured JSON objects into structured FHIR Patient Resources.
